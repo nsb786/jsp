@@ -14,6 +14,8 @@ JSTL Tag
      <p>My income is: <c:out value="${income}"/><p>  
    </c:if>  
 
+   Attribute= var,scope (store if result)
+
 3. c:choose,c:when:c:otherwise
 
    <c:choose>  
@@ -29,4 +31,13 @@ JSTL Tag
        Income is undetermined...  
      </c:otherwise>  
    </c:choose>  
+
+4. c:forEach
+
+    <c:forEach var="std" items="${students}">
+      <P> std Id ${std.Id} </p>
+    </c:forEach>
+    
+    Attribute = items,begin,end,step,var,varStatus
+
 
