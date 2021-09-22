@@ -1,2 +1,32 @@
 JSTL Tag
 --------
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+
+1. c:out
+
+   <c:out value="${student.Id}"/>
+
+2. c:if
+
+   <c:if test="${income > 8000}">  
+     <p>My income is: <c:out value="${income}"/><p>  
+   </c:if>  
+
+3. c:choose,c:when:c:otherwise
+
+   <c:choose>  
+     <c:when test="${income <= 1000}">  
+       Income is not good.  
+     </c:when>  
+
+     <c:when test="${income > 10000}">  
+        Income is very good.  
+     </c:when>  
+
+     <c:otherwise>  
+       Income is undetermined...  
+     </c:otherwise>  
+   </c:choose>  
+
