@@ -40,4 +40,22 @@ JSTL Tag
     
     Attribute = items,begin,end,step,var,varStatus
 
+5. c:set
+
+   <c:set var = "salary" scope = "request" value = "${2000*2}"/>
+
+6. c:remove
+   
+   <c:remove var = "salary"/>
+
+   Attribute= var,scope
+
+
+
+
+
+
+
+
+
 
