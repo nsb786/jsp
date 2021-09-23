@@ -50,7 +50,10 @@ JSTL Tag
 
    Attribute= var,scope
 
-
+7. c:redirect
+   
+   <c:redirect url="https://www.google.com"/>  
+   <c:redirect url="/home"/>  
 
 
 
